@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+</head>
+
+<body>
+    <section class="container mx-auto flex justify-between mt-2">
+        <nav class="flex justify-center items-center space-x-4">
+            <a href="#"
+                class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
+            <a href="#"
+                class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Team</a>
+            <a href="#"
+                class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Projects</a>
+            <a href="#"
+                class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Reports</a>
+        </nav>
+        <div class="profile">
+            <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+                class="text-white bg-blue-700 focus:ring-4  rounded-full  text-center inline-flex items-center"
+                type="button"><img class="h-16 w-16 rounded-full" src="./pro.jpg" alt=""></button>
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 w-24 bg-white rounded-lg dark:bg-gray-800 block"
+                style="position: absolute; inset: 0px auto auto 0px; margin:0px;" data-popper-reference-hidden="true"
+                data-popper-escaped="" data-popper-placement="bottom">
+                <ul class="py-1 text-sm font-semibold text-white" aria-labelledby="dropdown">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">Settings</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">Earnings</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">Sign
+                            out</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <header>
+        <section class="container mx-auto text-center">
+            <div class="logo">
+                <img class="mx-auto w-16 h-16" src="./1088.jpg" alt="">
+            </div>
+            <h1 class="text-6xl font-bold py-3">Welcome to <span class="text-red-600">Baper Bank!!!</span></h1>
+            <h4 class="font-semibold">This Bank Porvied You Unlimited Money. You cand <span
+                    class="text-orange-600">Diposit</span> & <span class="text-green-800">Widthdraw</span> as You want
+            </h4>
+        </section>
+    </header>
+
+    <main class="container mx-auto">
+        <section class="balance mt-8 w-3/4 mx-auto">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-blue-100 py-4 px-3 text-center rounded-lg">
+                    <h3>Your Total <span class="text-red-400 font-bold">Diposit</span> Amount </h3>
+                    <h2 class="text-4xl font-bold mt-6">$<span>100</span></h2>
+                </div>
+                <div class="bg-green-100 py-4 px-3 text-center rounded-lg">
+                    <h3>Your Total <span class="text-green-400 font-bold">Widthdraw</span> Amount </h3>
+                    <h2 class="text-4xl font-bold mt-6">$<span>200</span></h2>
+                </div>
+                <div class="bg-sky-100 py-4 px-3 text-center rounded-lg">
+                    <h3>Your Total <span class="text-sky-400 font-bold">Main</span> Amount </h3>
+                    <h2 class="text-4xl font-bold mt-6">$<span>1200</span></h2>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>

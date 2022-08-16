@@ -1,32 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
 </head>
+
 <body>
-    <section class="container mx-auto flex justify-between mt-1">
+    <section class="container mx-auto flex justify-between mt-4">
         <nav class="flex justify-center items-center space-x-4">
-            <a href="#" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
-            <a href="#" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Team</a>
-            <a href="#" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Projects</a>
-            <a href="#" class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Reports</a>
+            <a href="#"
+                class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
+            <a href="#"
+                class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Team</a>
+            <a href="#"
+                class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Projects</a>
+            <a href="#"
+                class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Reports</a>
         </nav>
         <div class="profile">
-            <img class="h-16 w-16 rounded-full" src="./pro.jpg" alt="">
+            <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+                class="text-white bg-blue-700 focus:ring-4  rounded-full  text-center inline-flex items-center"
+                type="button"><img class="h-16 w-16 rounded-full" src="./pro.jpg" alt=""></button>
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 w-24 bg-white rounded-lg dark:bg-gray-800 block"
+                style="position: absolute; inset: 0px auto auto 0px; margin:0px;" data-popper-reference-hidden="true"
+                data-popper-escaped="" data-popper-placement="bottom">
+                <ul class="py-1 text-sm font-semibold text-white" aria-labelledby="dropdown">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">Settings</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">Earnings</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">Sign
+                            out</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </section>
     <header>
-        <section class="container mx-auto p-8 text-center">
+        <section class="container mx-auto text-center">
             <div class="logo">
                 <img class="mx-auto w-16 h-16" src="./1088.jpg" alt="">
             </div>
             <h1 class="text-6xl font-bold py-3">Welcome to <span class="text-red-600">Baper Bank!!!</span></h1>
-            <h4 class="font-semibold">This Bank Porvied You Unlimited Money. You cand <span class="text-orange-600">Diposit</span> & <span class="text-green-800">Widthdraw</span> as You want</h4>
+            <h4 class="font-semibold">This Bank Porvied You Unlimited Money. You cand <span
+                    class="text-orange-600">Diposit</span> & <span class="text-green-800">Widthdraw</span> as You want
+            </h4>
         </section>
     </header>
+
+    <main class="container mx-auto">
+        <div class="text-center my-12 bg-slate-100 py-12 rounded">
+            <p class="font-bold text-red-900">Please Login</p>
+            <input class="block mx-auto my-3 w-1/2 rounded" type="email" name="" id="email" placeholder="Enter Your Email..">
+            <input class="block mx-auto my-3 w-1/2 rounded" type="password" name="" id="password" placeholder="Enter Your Password..">
+            <button class="bg-red-800 py-2 px-5 rounded font-semibold text-white hover:bg-red-600">Log In</button>
+        </div>
+
+
+
+    </main>
+
+
 </body>
+
 </html>

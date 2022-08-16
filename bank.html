@@ -70,11 +70,11 @@
             <div class="grid grid-cols-3 gap-4">
                 <div class="bg-blue-100 py-4 px-3 text-center rounded-lg">
                     <h3>Your Total <span class="text-red-400 font-bold">Diposit</span> Amount </h3>
-                    <h2 class="text-4xl font-bold mt-6 text-red-600">$<span>100</span></h2>
+                    <h2 class="text-4xl font-bold mt-6 text-red-600">$<span id="dAmount">100</span></h2>
                 </div>
                 <div class="bg-green-100 py-4 px-3 text-center rounded-lg">
                     <h3>Your Total <span class="text-green-600 font-bold">Widthdraw</span> Amount </h3>
-                    <h2 class="text-4xl font-bold mt-6 text-green-600">$<span>200</span></h2>
+                    <h2 class="text-4xl font-bold mt-6 text-green-600">$<span id="wAmount">200</span></h2>
                 </div>
                 <div class="bg-sky-200 py-4 px-3 text-center rounded-lg">
                     <h3>Your Total <span class="text-sky-600 font-bold">Main</span> Amount </h3>
@@ -89,14 +89,14 @@
                     <div class="text-center my-2 bg-slate-100 py-8 rounded">
                         <h4 class="font-semibold">Please Diposit Amount</h4>
                         <input class="block mx-auto my-3 w-1/2 rounded" type="text" name="" id="d-amount" placeholder="Diposit Amount..">
-                        <button class="bg-green-800 py-2 px-5 rounded font-semibold text-white hover:bg-green-900">Diposit</button>
+                        <button class="bg-green-800 py-2 px-5 rounded font-semibold text-white hover:bg-green-900" id="d-btn">Diposit</button>
                     </div>
                 </div>
                 <div class="widthdraw">
                     <div class="text-center my-2 bg-slate-100 py-8 rounded">
                         <h4 class="font-semibold">Please Widthdraw Amount</h4>
                         <input class="block mx-auto my-3 w-1/2 rounded" type="text" name="" id="w-amount" placeholder="Widthdraw Amount..">
-                        <button class="bg-orange-600 py-2 px-5 rounded font-semibold text-white hover:bg-red-600">Widthdraw</button>
+                        <button class="bg-orange-600 py-2 px-5 rounded font-semibold text-white hover:bg-red-600" id="w-btn">Widthdraw</button>
                     </div>
                 </div>
             </div>

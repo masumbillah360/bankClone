@@ -3,8 +3,6 @@ const widthdrawAmount = document.getElementById('w-amount');
 const dipositAmountContainer = document.getElementById('dAmount');
 const widthdrawAmountContainer = document.getElementById('wAmount');
 const mainBalanceContainer = document.getElementById('mainBalance');
-// const mainBalance = parseFloat(mainBalanceString.innerText);
-
 
 document.getElementById('d-btn').addEventListener('click',()=>{
     const dipositInput = getValue('d-amount');
@@ -16,10 +14,10 @@ document.getElementById('d-btn').addEventListener('click',()=>{
     else{
         dipositAmountContainer.innerText = dipositPvalue + dipositInput;
         mainBalanceContainer.innerText = mainBalance + dipositInput;
-    }
-    
+    }    
     dipositAmount.value = '';
 });
+
 document.getElementById('w-btn').addEventListener('click',()=>{
     const withdrawInput = getValue('w-amount');
     const withdrawContainer = getText('wAmount');
@@ -31,8 +29,7 @@ document.getElementById('w-btn').addEventListener('click',()=>{
         widthdrawAmountContainer.innerText = withdrawInput + withdrawContainer;
         mainBalanceContainer.innerText = mainBalance - withdrawInput; 
     }
-    widthdrawAmount.value = '';
-    
+    widthdrawAmount.value = '';    
 });
 
 
@@ -48,13 +45,3 @@ const getText = (id) => {
     const newText = parseFloat(gettext)
     return newText;
 }
-// const dipositHelper = (inputValue, innerText) =>{
-//     inputValue = parseFloat(inputValue);
-//     innerText = parseFloat(innerText);
-//     return { 
-        
-//         inputValue,
-//         innerText
-//     } 
-    
-// };
